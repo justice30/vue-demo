@@ -25,13 +25,22 @@ export default new Router({
       component: Login
     },
     {
-      path: '/',
+      path: '/hello-world',
       name: 'hello-world',
       component: HelloWorld
     }, {
       path: '/users',
       name: 'User',
       component: User
+    },
+    {
+      path: '/route',
+      name: 'route',
+      component: Route
+    }, {
+      path: '/pdf',
+      name: 'Pdf',
+      component: Pdf
     }
   ]
 })
