@@ -1,16 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+
 import HelloWorld from '@/components/HelloWorld'
 import User from '@/components/User'
 import Home from '@/components/Home'
 import Login from '@/components/Login'
 import Route from '@/components/Route'
 import Pdf from '@/components/Pdf'
+import EsInfo from '@/components/EsInfo'
+import EsIndices from '../components/EsIndices'
 
 Vue.use(Router)
-Vue.use(ElementUI)
 
 export default new Router({
   routes: [
@@ -41,6 +41,14 @@ export default new Router({
       path: '/pdf',
       name: 'Pdf',
       component: Pdf
+    }, {
+      path: '/esinfo',
+      name: 'EsInfo',
+      component: EsInfo
+    }, {
+      path: '/esindices',
+      name: 'EsIndices',
+      component: EsIndices
     }
   ]
 })
